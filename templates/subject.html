@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}{{ subject_name|title }} Topics{% endblock %}
+{% block content %}
+<section class="hero">
+    <a class="back-link" href="{{ url_for('home') }}">Back to Subjects</a>
+    <h1>{{ subject_name|title }}</h1>
+    <p>Select a topic to open summary, plan, and quiz.</p>
+</section>
+
+<section class="card-grid topic-grid">
+    {% for topic in topics %}
+    <article class="card topic-card">
+        <div class="topic-head">
+            <h3>{{ topic.topic|title }}</h3>
+            <span class="badge {{ topic.difficulty }}">{{ topic.difficulty|title }}</span>
+        </div>
+        <p>{{ topic.preview }}</p>
+        <a class="btn" href="{{ url_for('topic_page', topic_name=topic.topic) }}">Start Learning</a>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

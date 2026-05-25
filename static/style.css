@@ -1,0 +1,390 @@
+:root {
+    --bg: #f6f8fb;
+    --panel: #ffffff;
+    --text: #172033;
+    --muted: #56617a;
+    --line: #e6eaf2;
+    --brand: #1368d6;
+    --brand-dark: #0f56b0;
+    --easy: #118a4b;
+    --medium: #c96b00;
+    --hard: #c8332a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    background: linear-gradient(180deg, #f2f6ff 0%, var(--bg) 160px);
+}
+
+.container {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 0 auto;
+}
+
+.topbar {
+    border-bottom: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.topbar-inner {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.topnav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+
+.topnav a:hover {
+    color: var(--brand);
+}
+
+.page-content {
+    padding: 2rem 0 3rem;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(1.7rem, 2.2vw, 2.2rem);
+}
+
+.hero p {
+    margin: 0.6rem 0 1.4rem;
+    color: var(--muted);
+}
+
+.hero.mini {
+    margin-top: 2rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    color: var(--brand);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.subject-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.topic-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 6px 18px rgba(13, 27, 61, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 26px rgba(13, 27, 61, 0.12);
+    border-color: #cfdbef;
+}
+
+.subject-card {
+    text-decoration: none;
+    color: inherit;
+    min-height: 130px;
+}
+
+.subject-card h3 {
+    margin: 0 0 0.5rem;
+}
+
+.subject-card p,
+.topic-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.topic-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.7rem;
+}
+
+.topic-head h3 {
+    margin: 0;
+    font-size: 1.02rem;
+}
+
+.badge {
+    display: inline-block;
+    border-radius: 999px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #fff;
+    padding: 0.25rem 0.55rem;
+    white-space: nowrap;
+}
+
+.badge.easy {
+    background: var(--easy);
+}
+
+.badge.medium {
+    background: var(--medium);
+}
+
+.badge.hard {
+    background: var(--hard);
+}
+
+.btn {
+    margin-top: 1rem;
+    border: 0;
+    background: var(--brand);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 0.95rem;
+    border-radius: 9px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: var(--brand-dark);
+}
+
+.stack {
+    display: grid;
+    gap: 1rem;
+}
+
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1rem;
+}
+
+.panel h2 {
+    margin-top: 0;
+}
+
+.panel p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.meta-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.link-btn {
+    color: var(--brand);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.meta-label {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.quiz-form {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.quiz-form label {
+    font-weight: 700;
+    margin-top: 0.4rem;
+}
+
+.quiz-form .q {
+    margin: 0;
+    color: var(--muted);
+}
+
+.quiz-form textarea {
+    width: 100%;
+    border: 1px solid #ccd6e5;
+    border-radius: 10px;
+    resize: vertical;
+    padding: 0.65rem;
+    font: inherit;
+}
+
+.mcq-options {
+    display: grid;
+    gap: 0.55rem;
+}
+
+.mcq-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    border: 1px solid #d7dfec;
+    background: #f9fbff;
+    border-radius: 10px;
+    padding: 0.6rem 0.65rem;
+    cursor: pointer;
+}
+
+.mcq-option:hover {
+    border-color: #b9cae7;
+    background: #f3f8ff;
+}
+
+.mcq-option input {
+    margin-top: 0.15rem;
+}
+
+.result-panel {
+    border-color: #b5d2ff;
+}
+
+.collapse-toggle {
+    width: 100%;
+    text-align: left;
+    border: 0;
+    background: #e9f1ff;
+    color: #0f3d85;
+    padding: 0.7rem 0.9rem;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.collapse-content {
+    display: none;
+    margin-top: 0.9rem;
+}
+
+.collapse-content.open {
+    display: block;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.8rem;
+    margin-bottom: 0.9rem;
+}
+
+.score-box,
+.weak-box {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.8rem;
+    background: #f9fbff;
+}
+
+.score-box span,
+.weak-box span {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--muted);
+}
+
+.score-box strong,
+.weak-box strong {
+    font-size: 1.2rem;
+}
+
+.feedback-box {
+    background: #fff5dc;
+    border: 1px solid #f0d796;
+    border-radius: 10px;
+    padding: 0.9rem;
+    margin-bottom: 0.9rem;
+}
+
+.feedback-box h3 {
+    margin: 0 0 0.35rem;
+}
+
+.feedback-box p {
+    margin: 0;
+    color: #5b4720;
+}
+
+.motivation-box {
+    background: #e9f9ef;
+    border: 1px solid #b8e7c9;
+    border-radius: 10px;
+    padding: 0.9rem;
+    margin-top: 0.9rem;
+}
+
+.motivation-box h3 {
+    margin: 0 0 0.35rem;
+    color: #1f6c3e;
+}
+
+.motivation-box p {
+    margin: 0;
+    color: #205437;
+}
+
+.output-block {
+    white-space: pre-wrap;
+    background: #f3f7ff;
+    border: 1px solid #d9e5f8;
+    border-radius: 10px;
+    padding: 0.8rem;
+    color: #21324f;
+    overflow-x: auto;
+}
+
+.code-line {
+    font-family: Consolas, "Courier New", monospace;
+    color: #334d75;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+    .page-content {
+        padding-top: 1.3rem;
+    }
+}

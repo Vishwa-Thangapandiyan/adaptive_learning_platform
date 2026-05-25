@@ -1,0 +1,101 @@
+subject,topic,text,difficulty
+math,sets,"Sets are well-defined collections of objects. notation, subset relations, and operations like union, intersection, and complement with everyday examples.",basic
+math,relations and functions,"A relation connects elements of one set to another, while a function maps each input to exactly one output. Domain, range, and function types help describe mathematical behavior clearly.",basic
+math,trigonometric functions,Trigonometric functions link angles with ratios in a right triangle. Basic identities and angle transformations are used to solve geometric and practical measurement problems.,basic
+math,principle of mathematical induction,Mathematical induction proves statements for all natural numbers in two steps: base case and inductive step. It is a structured way to establish general formulas.,advanced
+math,complex numbers and quadratic equations,Complex numbers extend real numbers using i where i^2 = -1. Solving quadratic equations in this system requires algebraic manipulation and interpretation in the complex plane.,advanced
+math,linear inequalities,Linear inequalities represent value ranges instead of a single solution. Graphical interpretation on a number line helps compare feasible regions quickly.,basic
+math,permutations and combinations,"Permutations count ordered arrangements, while combinations count selections without order. Factorial-based formulas help solve counting problems with restrictions.",advanced
+math,binomial theorem,The binomial theorem expands expressions of the form (a + b)^n. General terms and coefficients are derived using combinatorial reasoning.,advanced
+math,sequences and series,"A sequence is an ordered list, and a series is its sum. Arithmetic and geometric progressions model repeated patterns in finance and growth.",advanced
+math,straight lines,Coordinate geometry represents a line using slope and intercept forms. Angle between lines and distance formulas connect algebra with geometry.,basic
+math,conic sections,"Conic sections include circles, parabolas, ellipses, and hyperbolas. Their standard equations and geometric properties are used in analytical modeling.",advanced
+math,limits and derivatives,Limits describe behavior near a point and lead to the derivative concept. Derivatives measure instantaneous rate of change in physical and geometric settings.,advanced
+math,continuity and differentiability,A function may be continuous yet not differentiable at some points. Precise conditions and theorem-based reasoning make this topic conceptually deeper.,advanced
+math,application of derivatives,"Derivative tools identify increasing-decreasing intervals, maxima-minima, and tangent behavior. Optimization problems require careful setup and interpretation.",advanced
+math,integrals,Integration reverses differentiation and accumulates quantities. Standard integration techniques and properties are central for area and motion problems.,advanced
+math,application of integrals,Definite integrals compute area under curves and between bounded regions. Building correct limits and region geometry is the key challenge.,advanced
+math,differential equations,Differential equations connect a function with its derivative and model dynamic systems. Solving first-order forms demands method selection and verification.,advanced
+math,vectors,Vectors represent magnitude and direction in a compact form. Dot product and basic vector operations support geometric and physical applications.,basic
+math,three dimensional geometry,Three-dimensional geometry uses vectors and coordinates to study lines and planes in space. Distance and angle calculations involve multi-step derivations.,advanced
+math,probability,Probability measures uncertainty and ranges from 0 to 1. sample space construction and event counting.,basic
+physics,units and measurements,"Physics begins with reliable measurement of physical quantities. Significant figures, dimensional analysis, and SI units reduce calculation errors.",basic
+physics,motion in a straight line,"This topic models one-dimensional motion using displacement, velocity, and acceleration. Graphs of position and velocity help interpret motion patterns.",basic
+physics,motion in a plane,Two-dimensional motion combines independent components along perpendicular axes. Projectile motion and uniform circular motion use vector decomposition.,advanced
+physics,laws of motion,Newton's laws explain how forces change motion. Free-body diagrams translate physical situations into solvable equations.,basic
+physics,work energy and power,"Work links force and displacement, while energy tracks system state. The work-energy theorem simplifies many mechanics problems.",basic
+physics,system of particles and rotational motion,"Rotational dynamics introduces torque, angular momentum, and moment of inertia. Multi-body analysis and axis selection make this topic advanced.",advanced
+physics,gravitation,Universal gravitation explains planetary orbits and falling bodies. Field and potential ideas unify many gravitational results.,basic
+physics,mechanical properties of solids and fluids,"Elasticity, pressure, viscosity, and surface tension describe matter under stress and flow. Applications include hydraulics and material behavior.",advanced
+physics,thermodynamics,"Thermodynamics studies heat, work, and internal energy with law-based constraints. Sign conventions and process paths require careful reasoning.",advanced
+physics,kinetic theory,Kinetic theory explains gas behavior using molecular motion assumptions. Macroscopic quantities are derived from microscopic averages.,advanced
+physics,oscillations,"Oscillatory motion repeats in time and is often modeled as simple harmonic motion. Phase, amplitude, and frequency define the system state.",basic
+physics,waves,Wave motion transfers energy without net transport of matter. Superposition and wave speed relations are central for analysis.,advanced
+physics,electrostatic potential and capacitance,Electric potential and capacitance describe energy storage in electric fields. Series-parallel capacitor networks require systematic simplification.,advanced
+physics,current electricity,"Current electricity covers drift, resistance, and network laws. Kirchhoff rules provide a framework for solving multi-loop circuits.",advanced
+physics,moving charges and magnetism,Charged particles in magnetic fields follow force laws and curved paths. Combining electric and magnetic effects raises conceptual difficulty.,advanced
+physics,electromagnetic induction,"Changing magnetic flux induces emf according to Faraday's law. Lenz's law determines direction, and applications include generators and transformers.",advanced
+physics,ray optics and optical instruments,Ray optics uses reflection and refraction rules to form images. Lens and mirror formulas support practical instrument analysis.,basic
+physics,wave optics,"Wave optics explains interference, diffraction, and polarization where ray models fail. Quantitative phase analysis makes the topic advanced.",advanced
+physics,dual nature of radiation and matter,Light and matter show both wave-like and particle-like behavior. Photoelectric effect and de Broglie ideas require conceptual shifts from classical models.,advanced
+physics,atoms and nuclei,"Atomic spectra, nuclear structure, and radioactive decay are covered with quantized energy ideas. This topic combines empirical models with modern theory.",advanced
+chemistry,some basic concepts of chemistry,"Mole concept, stoichiometry, and concentration terms form the numerical foundation of chemistry. Balanced equations connect mass relationships in reactions.",basic
+chemistry,structure of atom,Atomic models evolved from Rutherford to Bohr and quantum ideas. Electronic configuration is used to explain chemical periodicity.,advanced
+chemistry,classification of elements and periodicity,"Periodic trends in size, ionization energy, and electronegativity help predict reactivity. Group behavior is linked to valence electron patterns.",basic
+chemistry,chemical bonding and molecular structure,Ionic and covalent bonding are explained using electron transfer and sharing. VSEPR and hybridization models predict molecular shapes.,advanced
+chemistry,states of matter,Gas laws and intermolecular forces describe behavior of matter phases. Ideal and real gas deviations are interpreted through molecular interactions.,basic
+chemistry,thermodynamics,"Chemical thermodynamics connects enthalpy, entropy, and spontaneity. Sign conventions, state functions, and Gibbs energy make this topic rigorous.",advanced
+chemistry,equilibrium,Dynamic equilibrium is analyzed for both physical and chemical systems. Equilibrium constants and Le Chatelier principle predict shift direction.,advanced
+chemistry,redox reactions,Redox reactions involve electron transfer and oxidation number changes. Balancing redox equations builds a strong reaction framework.,basic
+chemistry,hydrogen,Hydrogen shows unique behavior among periodic elements. Its compounds and isotopes are studied with industrial relevance.,basic
+chemistry,s-block elements,Alkali and alkaline earth metals show characteristic trends in reactivity and compounds. Their chemistry is connected to electronic configuration.,basic
+chemistry,organic chemistry basic principles,"Organic chemistry begins with bonding, nomenclature, and reaction intermediates. Electronic effects guide mechanism prediction.",advanced
+chemistry,hydrocarbons,"Hydrocarbons include alkanes, alkenes, and alkynes with distinct reactivity patterns. Preparation methods and key reactions are compared.",basic
+chemistry,solid state,"Crystal structures, packing efficiency, and defects explain solid properties. Unit cell calculations require careful geometric reasoning.",advanced
+chemistry,solutions,Concentration measures and colligative properties describe solution behavior. Numerical treatment of vapor pressure and osmotic effects is important.,advanced
+chemistry,electrochemistry,Electrochemistry links redox chemistry with electrical work in cells. Nernst equation and electrode potentials increase analytical depth.,advanced
+chemistry,chemical kinetics,Reaction rate laws connect concentration and time. Mechanism inference from data and Arrhenius behavior make this topic advanced.,advanced
+chemistry,d and f block elements,Transition and inner-transition elements show variable oxidation states and complex formation. Their electronic structure leads to rich chemistry.,advanced
+chemistry,coordination compounds,"Coordination chemistry covers ligands, nomenclature, isomerism, and bonding theories. Magnetic and color properties demand multi-concept understanding.",advanced
+chemistry,aldehydes ketones and carboxylic acids,Carbonyl compounds undergo characteristic nucleophilic reactions with mechanism-specific outcomes. Functional group effects and conversions are heavily tested.,advanced
+chemistry,amines,Amines are basic nitrogen compounds with diverse preparation and reaction pathways. Mechanistic detail and naming conventions make the topic deeper.,advanced
+biology,the living world,"Biology defines life, diversity, and taxonomic hierarchy. Naming conventions and classification principles create a common scientific language.",basic
+biology,biological classification,Organisms are grouped using shared traits and evolutionary relationships. Kingdom-level comparison helps organize biological diversity.,basic
+biology,plant kingdom,Plant groups are studied from algae to angiosperms with key life-cycle differences. Structural traits support systematic classification.,basic
+biology,animal kingdom,"Animal phyla are identified by body plan, symmetry, and developmental features. Comparative study improves taxonomic understanding.",basic
+biology,morphology of flowering plants,"This topic introduces root, stem, leaf, flower, fruit, and seed morphology. Observation-based terminology is essential for identification.",basic
+biology,anatomy of flowering plants,Internal tissue systems such as xylem and phloem explain transport and support. Microscopic structure-function links are emphasized.,advanced
+biology,cell the unit of life,Cell organelles and membrane dynamics explain how life processes are organized. Prokaryotic and eukaryotic comparisons build conceptual clarity.,advanced
+biology,biomolecules,"Biomolecules include proteins, carbohydrates, lipids, and nucleic acids with specific roles. Metabolic logic and molecular structure make this topic abstract.",advanced
+biology,cell cycle and cell division,"Mitosis and meiosis explain growth, repair, and inheritance continuity. Stage-wise events are connected to chromosome behavior.",advanced
+biology,photosynthesis in higher plants,Photosynthesis converts light energy to chemical energy through light and dark reactions. Pathway comparison requires process-level reasoning.,advanced
+biology,respiration in plants,"Respiration describes energy release through glycolysis, Krebs cycle, and electron transport. ATP accounting makes this topic moderately analytical.",advanced
+biology,plant growth and development,Plant growth regulators and developmental phases control form and function. Multiple signaling interactions make outcomes context dependent.,advanced
+biology,digestion and absorption,Human digestion covers mechanical and enzymatic breakdown of food. Absorption pathways explain nutrient transfer into circulation.,basic
+biology,breathing and exchange of gases,Respiratory mechanics and gas exchange are linked with lung structure. Partial pressure gradients explain oxygen and carbon dioxide movement.,basic
+biology,body fluids and circulation,"Blood composition, cardiac cycle, and vessel function maintain internal transport. Coordinated regulation keeps tissues supplied.",advanced
+biology,excretory products and elimination,Nitrogenous waste removal is studied through nephron structure and urine formation. Filtration and reabsorption steps are process driven.,advanced
+biology,neural control and coordination,"Neurons, synapses, and reflex arcs explain fast communication in the body. Integration across central and peripheral systems adds complexity.",advanced
+biology,chemical coordination and integration,Endocrine glands regulate physiology through hormones and feedback loops. Inter-gland coordination and pathway effects require careful synthesis.,advanced
+biology,principles of inheritance and variation,"Mendelian genetics, linkage, and chromosomal theory explain trait transmission. Problem solving involves multi-generation cross analysis.",advanced
+biology,molecular basis of inheritance,"DNA replication, transcription, translation, and gene regulation are treated mechanistically. The topic is conceptually dense and experimentally grounded.",advanced
+computer science,computer systems overview,"Computer systems are explained using hardware-software interaction, CPU cycles, and memory hierarchy basics. This gives a clear foundation for later programming work.",basic
+computer science,number system conversions,"Binary, octal, decimal, and hexadecimal systems are converted using positional value rules. Accurate base conversion is essential for low-level computing.",advanced
+computer science,boolean algebra and logic gates,"Boolean expressions model digital decisions with AND, OR, and NOT operations. Circuit simplification and truth tables build logical rigor.",advanced
+computer science,python tokens and data types,"Python basics include identifiers, literals, and primitive data types. Writing short programs reinforces syntax discipline.",basic
+computer science,operators and expressions,"Arithmetic, relational, and logical operators build executable expressions. Precedence and type behavior must be handled carefully.",basic
+computer science,conditional and looping statements,Control flow in Python uses if-elif-else and loops for repeated execution. Correct branching and termination are key coding habits.,basic
+computer science,strings in python,"String indexing, slicing, and common methods are used for text processing tasks. Immutable behavior influences coding strategy.",advanced
+computer science,lists tuples and dictionaries,Core collection types support grouped storage and retrieval patterns. Choosing the right structure improves clarity and performance.,advanced
+computer science,functions and recursion,"Functions improve modular design, while recursion solves self-similar problems elegantly. Tracing recursive calls and base conditions makes this topic difficult.",advanced
+computer science,file handling in python,Programs read and write files for persistent data storage. Mode selection and exception-safe handling are important for reliability.,advanced
+computer science,data visualization basics,Charts and plots summarize data patterns for human interpretation. Even simple visual choices can change analytical conclusions.,basic
+computer science,sql data definition and constraints,SQL DDL commands create schemas with keys and constraints. Good table design prevents redundancy and inconsistency.,advanced
+computer science,sql joins and nested queries,Complex SQL combines tables and subqueries to answer layered questions. Query optimization and logic tracing raise difficulty.,advanced
+computer science,normalization and relational model,Normalization decomposes tables to reduce update anomalies while preserving dependencies. Formal design tradeoffs require abstract reasoning.,advanced
+computer science,computer networks and protocols,"Networking fundamentals include layered communication, addressing, and protocol roles. Reliable transfer depends on coordinated rules across layers.",advanced
+computer science,cyber safety and digital footprint,"Cyber safety covers safe passwords, privacy choices, and responsible digital behavior. It emphasizes preventive habits for daily computing.",basic
+computer science,network security and cryptography,"Security mechanisms include encryption, authentication, and key management. Threat models and protocol weaknesses make this topic advanced.",advanced
+computer science,data structures with stacks and queues,Linear data structures such as stacks and queues are used for controlled insertion and deletion. Problem mapping to structure behavior is crucial.,advanced
+computer science,searching and sorting algorithms,Searching and sorting are compared using correctness and time complexity. Algorithmic tradeoffs become clearer with worst-case analysis.,advanced
+computer science,object oriented programming in python,"OOP introduces classes, objects, inheritance, and polymorphism for reusable software design. Designing abstractions well is conceptually demanding.",advanced

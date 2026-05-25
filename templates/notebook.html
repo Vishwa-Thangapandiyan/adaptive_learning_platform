@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Notebook Outputs{% endblock %}
+{% block content %}
+<section class="hero">
+    <h1>Notebook Outputs</h1>
+    <p>Outputs loaded from <code>main_proj.ipynb</code> without modifying the notebook.</p>
+</section>
+
+{% if notebook_outputs %}
+<section class="stack">
+    {% for row in notebook_outputs %}
+    <article class="panel">
+        <button type="button" class="collapse-toggle" data-target="#cell-{{ row.cell_number }}">
+            Cell {{ row.cell_number }} Output
+        </button>
+        <div id="cell-{{ row.cell_number }}" class="collapse-content">
+            <p class="code-line">{{ row.source_preview }}</p>
+            <pre class="output-block">{{ row.output_text }}</pre>
+        </div>
+    </article>
+    {% endfor %}
+</section>
+{% else %}
+<article class="panel">
+    <p>No saved outputs found in the notebook yet.</p>
+</article>
+{% endif %}
+{% endblock %}

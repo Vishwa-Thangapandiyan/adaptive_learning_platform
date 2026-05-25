@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block title %}{{ topic.topic|title }}{% endblock %}
+{% block content %}
+<section class="hero">
+    <a class="back-link" href="{{ url_for('subject_topics', subject_name=topic.subject) }}">Back to {{ topic.subject|title }}</a>
+    <h1>{{ topic.topic|title }}</h1>
+</section>
+
+<section class="stack">
+    <article class="panel">
+        <h2>Summary</h2>
+        <p>{{ topic.text }}</p>
+    </article>
+
+    <article class="panel">
+        <h2>Study Plan</h2>
+        <div class="meta-row">
+            <span class="meta-label">Predicted Difficulty</span>
+            <strong>{{ predicted_difficulty }}</strong>
+        </div>
+        {% if study_plan is iterable and study_plan is not string %}
+        <ul>
+            {% for step in study_plan %}
+            <li>{{ step }}</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>{{ study_plan }}</p>
+        {% endif %}
+    </article>
+
+    <article class="panel">
+        <h2>Quiz</h2>
+        <form action="{{ url_for('submit_quiz') }}" method="post" class="quiz-form">
+            <input type="hidden" name="topic_name" value="{{ topic.topic }}">
+
+            <label>MCQ 1</label>
+            <p class="q">{{ questions.concept.prompt }}</p>
+            <div class="mcq-options">
+                {% for opt in questions.concept.options %}
+                <label class="mcq-option">
+                    <input type="radio" name="answer_concept" value="{{ loop.index0 }}"
+                        {% if submitted_answers and submitted_answers.concept == (loop.index0|string) %}checked{% endif %} required>
+                    <span>{{ opt }}</span>
+                </label>
+                {% endfor %}
+            </div>
+
+            <label>MCQ 2</label>
+            <p class="q">{{ questions.application.prompt }}</p>
+            <div class="mcq-options">
+                {% for opt in questions.application.options %}
+                <label class="mcq-option">
+                    <input type="radio" name="answer_application" value="{{ loop.index0 }}"
+                        {% if submitted_answers and submitted_answers.application == (loop.index0|string) %}checked{% endif %} required>
+                    <span>{{ opt }}</span>
+                </label>
+                {% endfor %}
+            </div>
+
+            <label>MCQ 3</label>
+            <p class="q">{{ questions.formula.prompt }}</p>
+            <div class="mcq-options">
+                {% for opt in questions.formula.options %}
+                <label class="mcq-option">
+                    <input type="radio" name="answer_formula" value="{{ loop.index0 }}"
+                        {% if submitted_answers and submitted_answers.formula == (loop.index0|string) %}checked{% endif %} required>
+                    <span>{{ opt }}</span>
+                </label>
+                {% endfor %}
+            </div>
+
+            <label for="struggle_input">Where are you struggling?</label>
+            <p class="q">Share one pain point so the app can generate motivation after your quiz.</p>
+            <textarea id="struggle_input" name="struggle_input" rows="2" placeholder="Example: I get confused in derivations and formula application.">{{ struggle_input if struggle_input else '' }}</textarea>
+
+            <button class="btn" type="submit">Submit Quiz</button>
+        </form>
+    </article>
+
+    {% if quiz_result %}
+    <article class="panel result-panel">
+        <button type="button" class="collapse-toggle" data-target="#quiz-results">
+            Quiz Results
+        </button>
+        <div id="quiz-results" class="collapse-content open">
+            <div class="result-grid">
+                <div class="score-box">
+                    <span>Score</span>
+                    <strong>{{ quiz_result.score }}%</strong>
+                </div>
+                <div class="weak-box">
+                    <span>Weakness Category</span>
+                    <strong>{{ quiz_result.weakness }}</strong>
+                </div>
+            </div>
+
+            <div class="feedback-box">
+                <h3>Feedback</h3>
+                <p>{{ quiz_result.feedback }}</p>
+            </div>
+
+            <h3>Study Tips</h3>
+            <ul>
+                {% for tip in quiz_result.tips %}
+                <li>{{ tip }}</li>
+                {% endfor %}
+            </ul>
+
+            {% if motivation_message %}
+            <div class="motivation-box">
+                <h3>Motivation</h3>
+                <p>{{ motivation_message }}</p>
+            </div>
+            {% endif %}
+        </div>
+    </article>
+    {% endif %}
+</section>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Select Subject{% endblock %}
+{% block content %}
+<section class="hero">
+    <h1>Choose a Subject</h1>
+    <p>Explore topics, review summaries, and test your understanding with a quick quiz.</p>
+</section>
+
+<section class="card-grid subject-grid">
+    {% for subject in subjects %}
+    <a class="card subject-card" href="{{ url_for('subject_topics', subject_name=subject) }}">
+        <h3>{{ subject|title }}</h3>
+        <p>View all topics and start learning</p>
+    </a>
+    {% endfor %}
+</section>
+{% endblock %}
